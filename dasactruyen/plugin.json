@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "Dạ Sắc Truyện",
+    "author": "Antigravity",
+    "version": 1,
+    "source": "https://dasactruyen.com",
+    "regexp": "dasactruyen\\\\.com",
+    "description": "Đọc truyện trên Dạ Sắc Truyện",
+    "local": "vi",
+    "type": "novel",
+    "locale": "vi_VN"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "genre": "genre.js",
+    "search": "search.js"
+  }
+}

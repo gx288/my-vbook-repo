@@ -7,7 +7,7 @@
     {
       "name": "Truyenc",
       "author": "gx288",
-      "version": 3,
+      "version": 4,
       "source": "https://truyenc.com",
       "regexp": "truyenc\\\\.com",
       "description": "Đọc truyện trên truyenc.com",
@@ -16,6 +16,19 @@
       "locale": "vi_VN",
       "path": "https://cdn.jsdelivr.net/gh/gx288/my-vbook-repo@master/truyenc/plugin.zip",
       "icon": "https://cdn.jsdelivr.net/gh/gx288/my-vbook-repo@master/truyenc/icon.png"
+    },
+    {
+      "name": "Dạ Sắc Truyện",
+      "author": "Antigravity",
+      "version": 4,
+      "source": "https://dasactruyen.com",
+      "regexp": "dasactruyen\\\\.com",
+      "description": "Đọc truyện trên Dạ Sắc Truyện",
+      "local": "vi",
+      "type": "novel",
+      "locale": "vi_VN",
+      "path": "https://cdn.jsdelivr.net/gh/gx288/my-vbook-repo@master/dasactruyen/plugin.zip",
+      "icon": "https://cdn.jsdelivr.net/gh/gx288/my-vbook-repo@master/dasactruyen/icon.png"
     }
   ]
 }
