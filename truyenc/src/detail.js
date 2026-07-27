@@ -22,7 +22,7 @@ function execute(url) {
         author: author,
         description: desc,
         genres: genres,
-        detail: "Tác giả: " + author + "<br>Thể loại: " + genres.map(g => g.title).join(", "),
+        detail: "Tác giả: " + author + "<br>Thể loại: " + genres.map(function(g) { return g.title; }).join(", "),
         host: "https://truyenc.com"
     });
 }
