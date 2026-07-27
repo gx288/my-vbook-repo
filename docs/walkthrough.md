@@ -1,17 +1,29 @@
-﻿# Tổng hợp các công việc đã thực hiện (Walkthrough)
+﻿# Quá Trình Thực Hiện (Walkthrough) - Dự án Truyenc
 
-## 1. Dọn dẹp và thiết lập Repository mới
-- Tạo thư mục gốc my-vbook-extensions-clean dành riêng cho bạn.
-- Di chuyển các công cụ cần thiết từ repository gốc (ExtensionMaker.jar, un.bat, và thư mục chứa bộ thư viện javafx-sdk-win64) vào một thư mục 	ools gọn gàng.
-- Điều này giúp repo của bạn luôn sạch sẽ, không bị lẫn lộn hàng chục extension của những tác giả khác.
+## Mục Tiêu
+Tạo một Extension đọc truyện từ 	ruyenc.com chuẩn 100% vBook, với đầy đủ tính năng: Đọc chi tiết, lấy danh sách chương, đọc nội dung, tìm kiếm và duyệt danh mục thể loại.
 
-## 2. Viết tài liệu quy trình
-- Tạo thư mục docs/ để lưu trữ các tài liệu.
-- Viết file workflow.md: Quy trình tự động phân tích trang web (thay vì dùng Selenium lỗi kết nối, chúng ta dùng Python + BeautifulSoup để bắt dữ liệu HTML tĩnh, tăng tốc độ và độ ổn định).
-- Viết file 	roubleshooting.md: Tài liệu hướng dẫn cách fix các lỗi phổ biến như không kết nối được Chrome, lỗi mã hóa Unicode (charmap), và lỗi JavaFX khi đóng gói.
+## Các Bước Triển Khai
 
-## 3. Phân tích thử một trang mẫu (truyenc)
-- Bằng cách sử dụng Python + BeautifulSoup kết hợp HTTP request, mình đã tải trang chủ 	ruyenc.com/truyen-sex?page=1 và tự động tìm ra được các selector để lấy thông tin truyện (tên truyện, hình ảnh bìa, link).
-- Thay vì cài đặt Firefox hay Selenium, cách tiếp cận bằng BeautifulSoup giúp thao tác cực kì nhanh mà vẫn giữ nguyên được hiệu quả cào dữ liệu.
+1. **Khởi tạo dự án độc lập:**
+   - Tạo thư mục riêng biệt tại d:\AT\github\vbook-project\my-vbook-repo.
+   - Setup các thư mục docs/, 	ools/, 	ruyenc/src/.
 
-Mọi thứ đều đã được thiết lập sẵn sàng trên ổ cứng của bạn trong thư mục d:\AT\github\my-vbook-extensions-clean.
+2. **Khởi tạo mã nguồn vBook Extension:**
+   - Bóc tách CSS selector của web 	ruyenc.com thông qua request thô thay vì dùng Selenium vì lý do tính ổn định và bảo mật.
+   - Viết các file cơ bản: home.js, gen.js, detail.js, 	oc.js, chap.js.
+   - Thêm tính năng Thể loại (genre.js) và Tìm kiếm (search.js).
+
+3. **Cấu trúc & Fix Bug Thực tế:**
+   - Sửa lỗi vBook parse JSON bị treo bằng cách chuẩn hóa toàn bộ file JSON sang định dạng UTF-8 without BOM qua Python Script.
+   - Thay đổi các cú pháp hiện đại ES6 trong detail.js sang thuần ES5 (ví dụ sửa hàm map(g => g.title) thành map(function(g) {return g.title;})) để tương thích trọn vẹn với Android JS Engine cũ (Rhino).
+   - Tổ chức file plugin.json ở root đúng chuẩn { "metadata": {}, "data": [] } để vBook đọc nhận ngay lập tức, và trỏ path chính xác tới file ZIP.
+
+4. **Đóng gói và Đẩy lên GitHub:**
+   - Dùng Python nén các file JS theo chuẩn DEFLATED để vBook không bị kẹt khi giải nén.
+   - git init, dd, commit và push toàn bộ mã nguồn lên Remote Repository công khai (Public) của user tại gx288/my-vbook-repo.
+   - Setup phiên bản ersion: 2 để kích hoạt tính năng **Auto-update** trên app vBook.
+
+5. **Kết quả cuối cùng:**
+   - User không cần tải bằng tay, chỉ cần dán link Github Raw vào vBook.
+   - Nhận thông báo cập nhật qua app bằng cách ấn nút xoay tròn mỗi khi Github Repo cập nhật Version mới.

@@ -1,19 +1,39 @@
-﻿# Các vấn đề thường gặp và cách xử lý (Troubleshooting)
+﻿# Các Vấn Đề Thường Gặp & Cách Giải Quyết (Troubleshooting)
 
-## 1. Lỗi không kết nối được Chrome khi dùng subagent (Ví dụ báo lỗi 'connection to Chrome could not be established')
-- **Nguyên nhân:** Subagent /browser hoặc Selenium cần kết nối với Chrome thông qua chế độ Remote Debugging, nhưng Chrome chưa được mở hoặc bị trùng port.
-- **Cách xử lý:** 
-  1. Thay vì dùng browser, yêu cầu AI dùng Python + BeautifulSoup (như lệnh Invoke-WebRequest) để tải thẳng file HTML về phân tích. Cách này nhanh, ổn định và không cần mở trình duyệt.
-  2. Nếu bắt buộc phải dùng trình duyệt (cho các trang chặn bot bằng Cloudflare hoặc có render JS phức tạp), hãy mở Chrome của bạn bằng cờ: --remote-debugging-port=9222 và đảm bảo tắt hết các phiên bản Chrome đang chạy ngầm trước đó.
+Tài liệu này ghi chú lại các lỗi điển hình gặp phải trong quá trình làm vBook Extension và cách xử lý triệt để.
 
-## 2. Lỗi Font chữ / Unicode khi đọc HTML (Ví dụ: UnicodeEncodeError)
-- **Nguyên nhân:** Lỗi khi console (cmd/powershell) cố in các ký tự tiếng Việt (UTF-8) ra màn hình với bảng mã cũ.
-- **Cách xử lý:** 
-  1. Xuất dữ liệu thẳng ra một file .json thay vì in ra màn hình.
-  2. Dùng biến môi trường $env:PYTHONIOENCODING="utf-8" khi chạy script Python.
+## 1. Extension tải mãi không xong (Xoay tròn liên tục)
+**Nguyên nhân:**
+- File plugin.json (bên ngoài hoặc bên trong file zip) chứa mã ẩn **BOM (Byte Order Mark)** do hệ điều hành Windows tự chèn vào khi lưu file với chuẩn UTF-8.
+- Trình phân giải JSON của Android trên app vBook không hiểu mã BOM này nên bị treo vòng lặp, dẫn tới tình trạng xoay tròn vô tận.
+- **Hoặc** do cấu trúc script JS chứa lỗi cú pháp nghiêm trọng (ví dụ dùng chuẩn ES6 như hàm mũi tên =>) khiến JavaScript engine (Rhino) bị sập ngay khi nạp file.
 
-## 3. Tool đóng gói ExtensionMaker.jar báo lỗi không chạy được
-- **Nguyên nhân:** Thiếu Java hoặc file thư viện JavaFX không đúng đường dẫn.
-- **Cách xử lý:** 
-  1. Cài đặt Java 11 trở lên (JDK 11+).
-  2. Đảm bảo thư mục javafx-sdk-win64 nằm cùng cấp với file un.bat và ExtensionMaker.jar. Nếu chạy file un.bat bị văng, hãy mở cmd tại thư mục chứa file, gõ lệnh un.bat để xem dòng lỗi cụ thể.
+**Cách giải quyết:**
+- Luôn sử dụng thư viện chuẩn của ngôn ngữ lập trình (như json.dump trong Python) hoặc các Text Editor hỗ trợ ghi file UTF-8 without BOM.
+- Tuyệt đối không dùng các cú pháp JS đời mới (ES6, ES7...) như =>, let, const. Hãy sử dụng chuẩn ES5 (ar, unction(x) { ... }).
+
+## 2. Thêm nguồn vào vBook không báo lỗi nhưng không hiện gì
+**Nguyên nhân:**
+- File plugin.json nằm ở thư mục root (để khai báo kho lưu trữ) bị sai cấu trúc so với kỳ vọng của vBook.
+- Dùng sai từ khóa url thay vì từ khóa đúng là path để trỏ tới file zip.
+- Viết dưới dạng Mảng (Array) [ {...} ] thay vì dạng Đối tượng có Object chứa metadata và data: { "metadata": {...}, "data": [ {...} ] }.
+
+**Cách giải quyết:**
+- Sửa lại file root plugin.json theo đúng cấu trúc {"metadata": {}, "data": []}.
+- Đổi khóa "url" thành "path".
+
+## 3. Không quét được truyện hoặc lỗi danh sách
+**Nguyên nhân:**
+- Dùng chung các CSS selectors cơ bản của một web truyện tranh (ví dụ .item-comic, .card-full-left) để quét một web có cấu trúc khác.
+- Phân trang hoặc cấu trúc web bị đổi class (ví dụ sang .d-flex).
+
+**Cách giải quyết:**
+- Dùng BeautifulSoup qua script Python để tải nguyên HTML thô của trang đích và kiểm tra kỹ bằng lệnh chọc sâu vào cấu trúc thẻ DOM thực tế.
+- Tinh chỉnh các selector về đúng thẻ cha thực sự chứa dữ liệu. Luôn làm một số hàm fallback (dự phòng) như check từng thẻ  nếu class cha bị thay đổi (áp dụng cho danh sách chương 	oc.js).
+
+## 4. Quá trình nâng cấp (Update)
+**Nguyên nhân / Mong muốn:**
+- Làm sao để không phải xóa đi tải lại mỗi khi cập nhật logic trên web?
+
+**Cách giải quyết:**
+- Chỉ cần tăng giá trị ersion bên trong thẻ metadata (của file extension json) và trong mảng data (của root json). App vBook sẽ tự động phát hiện phiên bản lớn hơn và hiện nút Update.
