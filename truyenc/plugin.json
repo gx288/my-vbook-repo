@@ -2,9 +2,9 @@
   "metadata": {
     "name": "Truyenc",
     "author": "gx288",
-    "version": 6,
+    "version": 7,
     "source": "https://truyenc.com",
-    "regexp": "truyenc\\\\.com",
+    "regexp": "truyenc\\.com",
     "description": "Đọc truyện trên truyenc.com",
     "local": "vi",
     "type": "novel",
