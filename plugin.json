@@ -8,7 +8,7 @@
     {
       "name": "Truyenc",
       "author": "gx288",
-      "version": 7,
+      "version": 8,
       "source": "https://truyenc.com",
       "regexp": "truyenc\\.com",
       "description": "Đọc truyện trên truyenc.com",
@@ -21,7 +21,7 @@
     {
       "name": "Dạ Sắc Truyện",
       "author": "Antigravity",
-      "version": 7,
+      "version": 8,
       "source": "https://dasactruyen.com",
       "regexp": "dasactruyen\\.com",
       "description": "Đọc truyện trên Dạ Sắc Truyện",
