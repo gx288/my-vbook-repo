@@ -1,0 +1,15 @@
+﻿import urllib.request
+from bs4 import BeautifulSoup
+
+url = 'https://truyenc.com/truyen/em-linh-cung-lop-1177'
+req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+try:
+    html = urllib.request.urlopen(req).read().decode('utf-8')
+    soup = BeautifulSoup(html, 'html.parser')
+    
+    if soup.select('.story-content'):
+        print("IT HAS CHAPTER CONTENT!")
+    elif soup.select('.story-chapters-main'):
+        print("IT HAS TOC (STORY PAGE)")
+except Exception as e:
+    print(e)
