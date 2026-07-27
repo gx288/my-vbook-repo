@@ -6,8 +6,7 @@ function execute(url) {
     content.select("a").remove();
     
     var html = content.html();
-    
-    // Clean up unnecessary things if any
+    if (!html) html = "Không lấy được nội dung chương. Hoặc nội dung bị khóa.";
     html = html.replace(/&nbsp;/g, " ");
 
     return Response.success(html);

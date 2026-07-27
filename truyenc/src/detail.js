@@ -1,28 +1,25 @@
 function execute(url) {
     var doc = Http.get(url).html();
     var title = doc.select("h2").first().text().replace("Truyện ", "").trim();
-    var author = doc.select("h3.h6 b").text();
-    var cover = doc.select("img.story-image").attr("src");
-    if (!cover) cover = doc.select("img.fluid-img").attr("src");
-    var desc = doc.select(".d-none.d-sm-block p").text();
-    if (!desc) desc = doc.select(".page-content p").first().text();
+    var author = doc.select("h3.h6").text().replace("Tác giả:", "").trim();
+    var cover = doc.select("img.fluid-img").attr("src");
     
-    var genres = [];
-    var genreEls = doc.select("h6 a.badge");
-    for (var i = 0; i < genreEls.size(); i++) {
-        genres.push({
-            title: genreEls.get(i).text(),
-            link: genreEls.get(i).attr("href")
-        });
+    var paragraphs = doc.select("p");
+    var desc = "";
+    for (var i = 0; i < paragraphs.size(); i++) {
+        var pText = paragraphs.get(i).text().trim();
+        if (pText.length > 50 && pText.indexOf("Tình trạng:") === -1 && pText.indexOf("Mới nhất:") === -1) {
+            desc = pText;
+            break;
+        }
     }
-
+    
     return Response.success({
         name: title,
         cover: cover,
         author: author,
         description: desc,
-        genres: genres,
-        detail: "Tác giả: " + author + "<br>Thể loại: " + genres.map(function(g) { return g.title; }).join(", "),
+        detail: "Tác giả: " + author,
         host: "https://truyenc.com"
     });
 }
