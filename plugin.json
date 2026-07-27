@@ -7,7 +7,7 @@
     {
       "name": "Truyenc",
       "author": "gx288",
-      "version": 2,
+      "version": 3,
       "source": "https://truyenc.com",
       "regexp": "truyenc\\\\.com",
       "description": "Đọc truyện trên truyenc.com",

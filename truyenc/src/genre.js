@@ -1,9 +1,33 @@
 function execute() {
     return Response.success([
-        {title: "Truyện ma", input: "https://truyenc.com/tim-truyen-ma", script: "gen.js"},
-        {title: "Truyện 18+", input: "https://truyenc.com/tim-truyen-18", script: "gen.js"},
-        {title: "Truyện cười", input: "https://truyenc.com/tim-truyen-cuoi", script: "gen.js"},
-        {title: "Truyện audio", input: "https://truyenc.com/tim-truyen-audio", script: "gen.js"},
-        {title: "Chưa phân loại", input: "https://truyenc.com/tim-truyen-chua-phan-loai", script: "gen.js"}
+        {title: "Truyện Sex", input: "https://truyenc.com/truyen-sex", script: "gen.js"},
+        {title: "Truyện sắc hiệp", input: "https://truyenc.com/truyen-sac-hiep", script: "gen.js"},
+        {title: "Truyện có thật", input: "https://truyenc.com/truyen-co-that", script: "gen.js"},
+        {title: "Truyện kinh dị", input: "https://truyenc.com/truyen-kinh-di", script: "gen.js"},
+        {title: "Truyện ma dài kỳ", input: "https://truyenc.com/truyen-ma-dai-ky", script: "gen.js"},
+        {title: "Truyện H", input: "https://truyenc.com/truyen-h", script: "gen.js"},
+        {title: "Truyện kiếm hiệp", input: "https://truyenc.com/truyen-kiem-hiep", script: "gen.js"},
+        {title: "Truyện dâm hiệp", input: "https://truyenc.com/truyen-dam-hiep", script: "gen.js"},
+        {title: "Truyện Voz", input: "https://truyenc.com/truyen-voz", script: "gen.js"},
+        {title: "Truyện cười khác", input: "https://truyenc.com/truyen-cuoi-khac", script: "gen.js"},
+        {title: "Truyện ma có thật", input: "https://truyenc.com/truyen-ma-co-that", script: "gen.js"},
+        {title: "Truyện cười dân gian", input: "https://truyenc.com/truyen-cuoi-dan-gian", script: "gen.js"},
+        {title: "Truyên cười quốc tế", input: "https://truyenc.com/truyen-cuoi-quoc-te", script: "gen.js"},
+        {title: "Truyện Sex Audio", input: "https://truyenc.com/truyen-sex-audio", script: "gen.js"},
+        {title: "Truyện trạng Quỳnh", input: "https://truyenc.com/truyen-trang-quynh", script: "gen.js"},
+        {title: "Truyện cười vova", input: "https://truyenc.com/truyen-cuoi-vova", script: "gen.js"},
+        {title: "Truyện ma Trung Quốc", input: "https://truyenc.com/truyen-ma-trung-quoc", script: "gen.js"},
+        {title: "Truyện ma Việt Nam", input: "https://truyenc.com/truyen-ma-viet-nam", script: "gen.js"},
+        {title: "Truyện ma audio", input: "https://truyenc.com/truyen-ma-audio", script: "gen.js"},
+        {title: "Truyện cười 18+", input: "https://truyenc.com/truyen-cuoi-18", script: "gen.js"},
+        {title: "Truyện cười tình yêu", input: "https://truyenc.com/truyen-cuoi-tinh-yeu", script: "gen.js"},
+        {title: "Truyện ma ngắn", input: "https://truyenc.com/truyen-ma-ngan", script: "gen.js"},
+        {title: "Truyện ma hay", input: "https://truyenc.com/truyen-ma-hay", script: "gen.js"},
+        {title: "Truyện ma Nguyễn Ngọc Ngạn", input: "https://truyenc.com/truyen-ma-nguyen-ngoc-ngan", script: "gen.js"},
+        {title: "Truyện audio kiếm hiệp", input: "https://truyenc.com/truyen-audio-kiem-hiep", script: "gen.js"},
+        {title: "Truyện audio ngôn tình", input: "https://truyenc.com/truyen-audio-ngon-tinh", script: "gen.js"},
+        {title: "Đọc truyện đêm khuya", input: "https://truyenc.com/truyen-dem-khuya", script: "gen.js"},
+        {title: "Truyện audio trinh thám", input: "https://truyenc.com/truyen-audio-trinh-tham", script: "gen.js"},
+        {title: "Truyện audio ngắn", input: "https://truyenc.com/truyen-audio-ngan", script: "gen.js"}
     ]);
 }
