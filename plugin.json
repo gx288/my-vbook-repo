@@ -9,7 +9,7 @@
     "local": "vi",
     "type": "novel",
     "locale": "vi-VN",
-    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/plugin.zip",
+    "path": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/plugin.zip",
     "icon": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/icon.png"
   }
 ]
