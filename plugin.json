@@ -1,4 +1,4 @@
-﻿{
+{
   "metadata": {
     "author": "gx288",
     "description": "My personal vBook extensions repository"
@@ -9,7 +9,7 @@
       "author": "gx288",
       "version": 1,
       "source": "https://truyenc.com",
-      "regexp": "truyenc\\.com",
+      "regexp": "truyenc\\\\.com",
       "description": "Đọc truyện trên truyenc.com",
       "local": "vi",
       "type": "novel",

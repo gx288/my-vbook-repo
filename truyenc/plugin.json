@@ -1,14 +1,14 @@
-﻿{
+{
   "metadata": {
     "name": "Truyenc",
-    "author": "Antigravity",
+    "author": "gx288",
     "version": 1,
     "source": "https://truyenc.com",
-    "regexp": "truyenc\\.com",
+    "regexp": "truyenc\\\\.com",
     "description": "Đọc truyện trên truyenc.com",
     "local": "vi",
     "type": "novel",
-    "locale": "vi-VN"
+    "locale": "vi_VN"
   },
   "script": {
     "home": "home.js",
