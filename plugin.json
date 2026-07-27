@@ -14,8 +14,8 @@
       "local": "vi",
       "type": "novel",
       "locale": "vi_VN",
-      "path": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/plugin.zip",
-      "icon": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/icon.png"
+      "path": "https://cdn.jsdelivr.net/gh/gx288/my-vbook-repo@master/truyenc/plugin.zip",
+      "icon": "https://cdn.jsdelivr.net/gh/gx288/my-vbook-repo@master/truyenc/icon.png"
     }
   ]
 }
