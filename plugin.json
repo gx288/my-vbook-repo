@@ -2,15 +2,15 @@
   "metadata": {
     "author": "gx288",
     "description": "My personal vBook extensions repository",
-    "version": 9
+    "version": 10
   },
   "data": [
     {
       "name": "Truyenc",
       "author": "gx288",
-      "version": 9,
+      "version": 10,
       "source": "https://truyenc.com",
-      "regexp": ".*truyenc\\\\.com.*",
+      "regexp": ".*truyenc\\.com.*",
       "description": "Đọc truyện trên truyenc.com",
       "local": "vi",
       "type": "novel",
@@ -21,9 +21,9 @@
     {
       "name": "Dạ Sắc Truyện",
       "author": "Antigravity",
-      "version": 9,
+      "version": 10,
       "source": "https://dasactruyen.com",
-      "regexp": ".*dasactruyen\\\\.com.*",
+      "regexp": ".*dasactruyen\\.com.*",
       "description": "Đọc truyện trên Dạ Sắc Truyện",
       "local": "vi",
       "type": "novel",
