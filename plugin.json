@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Truyenc",
+    "author": "Antigravity",
+    "version": 1,
+    "source": "https://truyenc.com",
+    "regexp": "truyenc\\.com",
+    "description": "Đọc truyện trên truyenc.com",
+    "local": "vi",
+    "type": "novel",
+    "locale": "vi-VN",
+    "url": "https://raw.githubusercontent.com/YourUsername/my-vbook-repo/main/truyenc/plugin.zip",
+    "icon": "https://raw.githubusercontent.com/YourUsername/my-vbook-repo/main/truyenc/icon.png"
+  }
+]
