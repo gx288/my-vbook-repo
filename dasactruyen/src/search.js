@@ -1,8 +1,8 @@
 function execute(key, page) {
     if (!page) page = '1';
-    var finalUrl = "https://dasactruyen.com/?s=" + key;
+    var finalUrl = "https://dasactruyen.com/?s=" + encodeURIComponent(key);
     if (page !== '1') {
-        finalUrl = "https://dasactruyen.com/page/" + page + "/?s=" + key;
+        finalUrl = "https://dasactruyen.com/page/" + page + "/?s=" + encodeURIComponent(key);
     }
     
     var doc = Http.get(finalUrl).html();
