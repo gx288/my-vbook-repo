@@ -1,15 +1,21 @@
-﻿[
-  {
-    "name": "Truyenc",
-    "author": "Antigravity",
-    "version": 1,
-    "source": "https://truyenc.com",
-    "regexp": "truyenc\\.com",
-    "description": "Đọc truyện trên truyenc.com",
-    "local": "vi",
-    "type": "novel",
-    "locale": "vi-VN",
-    "path": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/plugin.zip",
-    "icon": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/icon.png"
-  }
-]
+﻿{
+  "metadata": {
+    "author": "gx288",
+    "description": "My personal vBook extensions repository"
+  },
+  "data": [
+    {
+      "name": "Truyenc",
+      "author": "gx288",
+      "version": 1,
+      "source": "https://truyenc.com",
+      "regexp": "truyenc\\.com",
+      "description": "Đọc truyện trên truyenc.com",
+      "local": "vi",
+      "type": "novel",
+      "locale": "vi_VN",
+      "path": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/plugin.zip",
+      "icon": "https://raw.githubusercontent.com/gx288/my-vbook-repo/master/truyenc/icon.png"
+    }
+  ]
+}
