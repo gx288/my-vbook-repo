@@ -2,7 +2,7 @@
   "metadata": {
     "name": "SayHentai",
     "author": "Antigravity",
-    "version": 14,
+    "version": 15,
     "source": "https://sayhentai.cfd",
     "regexp": ".*sayhentai\\.cfd.*",
     "description": "Đọc truyện tranh hentai trên SayHentai",
