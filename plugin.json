@@ -6,6 +6,16 @@
   },
   "data": [
     {
+      "name": "HentaiVN",
+      "author": "Antigravity",
+      "version": 1,
+      "source": "https://hentaivn.casa",
+      "icon": "https://hentaivn.casa/favicon.ico",
+      "type": "comic",
+      "description": "Đọc truyện tranh trên HentaiVN",
+      "path": "hentaivn"
+    },
+    {
       "name": "LXManga",
       "author": "Antigravity",
       "version": 1,

@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "HentaiVN",
+    "author": "Antigravity",
+    "version": 1,
+    "source": "https://hentaivn.casa",
+    "regexp": ".*hentaivn\\..*",
+    "description": "Đọc truyện tranh hentai trên HentaiVN",
+    "local": "vi",
+    "type": "comic",
+    "locale": "vi_VN"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "genre": "genre.js",
+    "search": "search.js"
+  }
+}
