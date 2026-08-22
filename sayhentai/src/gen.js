@@ -29,8 +29,8 @@ function execute(url, page) {
             if (!cover) cover = img.attr("src");
             
             var desc = "";
-            var chapterSpan = e.select(".status").first();
-            if (!chapterSpan) chapterSpan = e.select(".episode").first();
+            var chapterSpan = e.select(".episode").first();
+            if (!chapterSpan) chapterSpan = e.select(".status").first();
             if (!chapterSpan) chapterSpan = e.select(".viewsCount span").first();
             if (chapterSpan) {
                 desc = chapterSpan.text().trim();
