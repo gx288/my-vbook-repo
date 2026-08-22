@@ -7,10 +7,9 @@ function execute(key, page) {
     }
     
     var doc = Http.get(fetchUrl).html();
-    var els = doc.select(".item");
-    if (els.size() === 0) {
-        els = doc.select("article");
-    }
+    var els = doc.select(".page-item-detail");
+    if (els.size() === 0) els = doc.select("article");
+    if (els.size() === 0) els = doc.select(".item"); // Fallback to sidebar if really nothing else
     
     var list = [];
     for (var i = 0; i < els.size(); i++) {
@@ -26,7 +25,9 @@ function execute(key, page) {
             if (!cover) cover = img.attr("src");
             
             var desc = "";
-            var chapterSpan = e.select(".viewsCount span").first();
+            var chapterSpan = e.select(".status").first();
+            if (!chapterSpan) chapterSpan = e.select(".episode").first();
+            if (!chapterSpan) chapterSpan = e.select(".viewsCount span").first();
             if (chapterSpan) {
                 desc = chapterSpan.text().trim();
             }
