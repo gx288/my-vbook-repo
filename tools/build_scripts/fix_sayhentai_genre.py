@@ -1,4 +1,7 @@
-function execute() {
+﻿import os
+
+with open('sayhentai/src/genre.js', 'w', encoding='utf-8') as f:
+    f.write('''function execute() {
     var doc = Http.get("https://sayhentai.cfd/").html();
     var allLinks = doc.select("a");
     
@@ -24,4 +27,4 @@ function execute() {
         }
     }
     return Response.success(list);
-}
+}''')
