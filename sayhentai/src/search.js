@@ -25,11 +25,17 @@ function execute(key, page) {
             var cover = img.attr("data-src");
             if (!cover) cover = img.attr("src");
             
+            var desc = "";
+            var chapterSpan = e.select(".viewsCount span").first();
+            if (chapterSpan) {
+                desc = chapterSpan.text().trim();
+            }
+            
             list.push({
                 name: a.attr("title") || a.text().trim(),
                 link: link,
                 cover: cover,
-                description: "",
+                description: desc,
                 host: "https://sayhentai.cfd"
             });
         }
