@@ -6,6 +6,16 @@
   },
   "data": [
     {
+      "name": "LXManga",
+      "author": "Antigravity",
+      "version": 1,
+      "source": "https://www.lxmanga.quest",
+      "icon": "https://www.lxmanga.quest/favicon.ico",
+      "type": "comic",
+      "description": "Đọc truyện tranh trên LXManga",
+      "path": "lxmanga"
+    },
+    {
       "name": "Truyenc",
       "author": "gx288",
       "version": 10,

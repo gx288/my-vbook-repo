@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "name": "LXManga",
+    "author": "Antigravity",
+    "version": 1,
+    "source": "https://www.lxmanga.quest",
+    "regexp": ".*lxmanga\\..*|.*lxhentai\\..*",
+    "description": "Đọc truyện tranh trên LXManga",
+    "local": "vi",
+    "type": "comic",
+    "locale": "vi_VN"
+  },
+  "script": {
+    "home": "home.js",
+    "detail": "detail.js",
+    "toc": "toc.js",
+    "chap": "chap.js",
+    "genre": "genre.js",
+    "search": "search.js"
+  }
+}
