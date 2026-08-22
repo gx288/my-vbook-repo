@@ -2,7 +2,7 @@
   "metadata": {
     "author": "gx288",
     "description": "My personal vBook extensions repository",
-    "version": 10
+    "version": 11
   },
   "data": [
     {
@@ -30,6 +30,19 @@
       "locale": "vi_VN",
       "path": "https://raw.githack.com/gx288/my-vbook-repo/main/dasactruyen/plugin.zip",
       "icon": "https://raw.githack.com/gx288/my-vbook-repo/main/dasactruyen/icon.png"
+    },
+    {
+      "name": "SayHentai",
+      "author": "Antigravity",
+      "version": 1,
+      "source": "https://sayhentai.cfd",
+      "regexp": ".*sayhentai\\.cfd.*",
+      "description": "Đọc truyện tranh hentai trên SayHentai",
+      "local": "vi",
+      "type": "comic",
+      "locale": "vi_VN",
+      "path": "https://raw.githack.com/gx288/my-vbook-repo/main/sayhentai/plugin.zip",
+      "icon": "https://raw.githack.com/gx288/my-vbook-repo/main/sayhentai/icon.png"
     }
   ]
 }
