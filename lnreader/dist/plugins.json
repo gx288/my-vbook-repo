@@ -1,0 +1,29 @@
+[
+  {
+    "id": "khotruyenchu",
+    "name": "Kho Truyện Chữ",
+    "site": "https://khotruyenchu.fun",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/khotruyenchu.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/khotruyenchu.png"
+  },
+  {
+    "id": "santruyen",
+    "name": "Sàn Truyện",
+    "site": "https://truyenhoan.com",
+    "lang": "Tiếng Việt",
+    "version": "2.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/santruyen.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/santruyen.png"
+  },
+  {
+    "id": "truyenfull",
+    "name": "Truyện Full",
+    "site": "https://truyenfull.live",
+    "lang": "Tiếng Việt",
+    "version": "2.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyenfull.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyenfull.png"
+  }
+]
