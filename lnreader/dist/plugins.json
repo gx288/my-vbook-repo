@@ -1,5 +1,14 @@
 [
   {
+    "id": "banlong",
+    "name": "Bản Long",
+    "site": "https://blhvip.vn",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/banlong.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/banlong.png"
+  },
+  {
     "id": "dasactruyen",
     "name": "Dạ Sắc Truyện",
     "site": "https://dasactruyen.com",
