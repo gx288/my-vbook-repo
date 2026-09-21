@@ -1,5 +1,14 @@
 [
   {
+    "id": "dasactruyen",
+    "name": "Dạ Sắc Truyện",
+    "site": "https://dasactruyen.com",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/dasactruyen.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/dasactruyen.png"
+  },
+  {
     "id": "khotruyenchu",
     "name": "Kho Truyện Chữ",
     "site": "https://khotruyenchu.fun",
