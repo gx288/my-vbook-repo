@@ -61,5 +61,14 @@
     "version": "2.0.2",
     "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyenfull.js",
     "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyenfull.png"
+  },
+  {
+    "id": "truyennet",
+    "name": "Truyện Net",
+    "site": "https://truyennet.org",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyennet.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyennet.png"
   }
 ]
