@@ -27,6 +27,15 @@
     "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/khotruyenchu.png"
   },
   {
+    "id": "medoctruyenchu",
+    "name": "Mê Đọc Truyện Chữ",
+    "site": "https://medoctruyenchu.net",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/medoctruyenchu.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/medoctruyenchu.png"
+  },
+  {
     "id": "santruyen",
     "name": "Sàn Truyện",
     "site": "https://truyenhoan.com",
