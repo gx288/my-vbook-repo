@@ -18,6 +18,15 @@
     "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/dasactruyen.png"
   },
   {
+    "id": "hako",
+    "name": "Hako Novel",
+    "site": "https://docln.sbs",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/hako.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/hako.png"
+  },
+  {
     "id": "khotruyenchu",
     "name": "Kho Truyện Chữ",
     "site": "https://khotruyenchu.fun",
@@ -70,5 +79,14 @@
     "version": "1.0.0",
     "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyennet.js",
     "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyennet.png"
+  },
+  {
+    "id": "wikidich",
+    "name": "Wiki Dịch",
+    "site": "https://wikicv.org",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/wikidich.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/wikidich.png"
   }
 ]
