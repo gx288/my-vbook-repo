@@ -81,6 +81,15 @@
     "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyenc.png"
   },
   {
+    "id": "truyenchu",
+    "name": "Truyện Chữ",
+    "site": "https://truyenchu.net",
+    "lang": "Tiếng Việt",
+    "version": "1.0.0",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyenchu.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyenchu.png"
+  },
+  {
     "id": "wikidich",
     "name": "Wiki Dịch",
     "site": "https://wikicv.org",
