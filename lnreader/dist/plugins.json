@@ -1,7 +1,7 @@
 [
   {
     "id": "banlong",
-    "name": "Báº£n Long",
+    "name": "Bản Long",
     "site": "https://blhvip.vn",
     "lang": "Tiếng Việt",
     "version": "1.0.1",
@@ -10,7 +10,7 @@
   },
   {
     "id": "dasactruyen",
-    "name": "Dáº¡ Sáº¯c Truyá»‡n",
+    "name": "Dạ Sắc Truyện",
     "site": "https://dasactruyen.com",
     "lang": "Tiếng Việt",
     "version": "1.0.1",
@@ -28,7 +28,7 @@
   },
   {
     "id": "khotruyenchu",
-    "name": "Kho Truyá»‡n Chá»¯",
+    "name": "Kho Truyện Chữ",
     "site": "https://khotruyenchu.fun",
     "lang": "Tiếng Việt",
     "version": "1.0.3",
@@ -37,7 +37,7 @@
   },
   {
     "id": "medoctruyenchu",
-    "name": "MÃª Äá»c Truyá»‡n Chá»¯",
+    "name": "Mê Đọc Truyện Chữ",
     "site": "https://medoctruyenchu.net",
     "lang": "Tiếng Việt",
     "version": "1.0.1",
@@ -46,30 +46,12 @@
   },
   {
     "id": "santruyen",
-    "name": "SÃ n Truyá»‡n",
+    "name": "Sàn Truyện",
     "site": "https://truyenhoan.com",
     "lang": "Tiếng Việt",
     "version": "2.0.3",
     "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/santruyen.js",
     "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/santruyen.png"
-  },
-  {
-    "id": "truyenfull",
-    "name": "Truyá»‡n Full",
-    "site": "https://truyenfull.live",
-    "lang": "Tiếng Việt",
-    "version": "2.0.3",
-    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyenfull.js",
-    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyenfull.png"
-  },
-  {
-    "id": "truyennet",
-    "name": "Truyá»‡n Net",
-    "site": "https://truyennet.org",
-    "lang": "Tiếng Việt",
-    "version": "1.0.1",
-    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyennet.js",
-    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyennet.png"
   },
   {
     "id": "truyenc",
@@ -88,6 +70,24 @@
     "version": "1.0.0",
     "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyenchu.js",
     "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyenchu.png"
+  },
+  {
+    "id": "truyenfull",
+    "name": "Truyện Full",
+    "site": "https://truyenfull.live",
+    "lang": "Tiếng Việt",
+    "version": "2.0.3",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyenfull.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyenfull.png"
+  },
+  {
+    "id": "truyennet",
+    "name": "Truyện Net",
+    "site": "https://truyennet.org",
+    "lang": "Tiếng Việt",
+    "version": "1.0.1",
+    "url": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/dist/vietnamese/truyennet.js",
+    "iconUrl": "https://raw.githubusercontent.com/gx288/my-vbook-repo/main/lnreader/icons/truyennet.png"
   },
   {
     "id": "wikidich",
